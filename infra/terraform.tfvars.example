@@ -1,0 +1,13 @@
+# Copy to terraform.tfvars and fill in your values -- do not commit
+# terraform.tfvars itself (it's gitignored).
+
+aws_region            = "us-east-1"
+instance_type          = "g5.2xlarge"
+instance_count         = 1
+use_spot               = true
+root_volume_size_gb    = 200
+key_pair_name          = "adjustiq-key"        # must already exist in this region
+allowed_ssh_cidr       = "203.0.113.4/32"       # your public IP + /32
+artifacts_bucket_name  = "adjustiq-fine-tuning-artifacts"
+github_repo_url        = "https://github.com/<your-username>/adjustiq-fine-tuning.git"
+# hf_token             = "hf_xxx"                # optional, or log in manually over SSH

@@ -1,0 +1,8 @@
+transformers>=4.44
+peft>=0.12
+bitsandbytes>=0.43
+trl>=0.20
+datasets>=2.20
+accelerate>=0.33
+torch>=2.2
+nvidia-ml-py
